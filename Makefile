@@ -1,7 +1,7 @@
 # $FreeBSD: head/lang/sbcl/Makefile 431505 2017-01-15 01:34:45Z ler $
 
 PORTNAME=	sbcl
-PORTVERSION=	1.3.14
+PORTVERSION=	1.3.19
 DISTVERSIONSUFFIX=	-source
 PORTEPOCH=	1
 CATEGORIES=	local lang lisp
