@@ -1,7 +1,7 @@
 # $FreeBSD: head/lang/sbcl/Makefile 431505 2017-01-15 01:34:45Z ler $
 
 PORTNAME=	sbcl
-PORTVERSION=	1.3.19
+PORTVERSION=	1.3.20
 DISTVERSIONSUFFIX=	-source
 PORTEPOCH=	1
 CATEGORIES=	local lang lisp
@@ -15,13 +15,13 @@ LICENSE_NAME=	public domain | FreeBSD
 LICENSE_FILE=	${WRKSRC}/COPYING
 LICENSE_PERMS=	dist-mirror pkg-mirror auto-accept dist-sell pkg-sell
 
+ONLY_FOR_ARCHS=	amd64 i386
+
 LIB_DEPENDS=	libgmp.so:math/gmp \
 		libmpfr.so:math/mpfr
 
 USES=		gmake makeinfo tar:bzip2
 USE_GNOME=	glib20
-
-ONLY_FOR_ARCHS=	amd64 i386
 
 WRKSRC=	${WRKDIR}/${PORTNAME}-${PORTVERSION}
 
